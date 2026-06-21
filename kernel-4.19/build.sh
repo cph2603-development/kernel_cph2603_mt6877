@@ -21,6 +21,7 @@ export CROSS_COMPILE=aarch64-linux-gnu-
 export KBUILD_BUILD_USER=root
 export KBUILD_BUILD_HOST=dg02-pool06-kvm32
 export KBUILD_BUILD_VERSION=1
+export LLVM_IAS=1
 
 # make .config
 make O=out \
@@ -28,7 +29,6 @@ make O=out \
   LD=ld.lld \
   AR=llvm-ar \
   NM=llvm-nm \
-  AS=llvm-as \
   OBJCOPY=llvm-objcopy \
   OBJDUMP=llvm-objdump \
   STRIP=llvm-strip \
@@ -40,7 +40,6 @@ make -j$(nproc) O=out \
   LD=ld.lld \
   AR=llvm-ar \
   NM=llvm-nm \
-  AS=llvm-as \
   OBJCOPY=llvm-objcopy \
   OBJDUMP=llvm-objdump \
   STRIP=llvm-strip \
