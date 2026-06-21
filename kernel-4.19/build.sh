@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # some paths
 KERNELDIR=$(pwd)
