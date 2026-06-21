@@ -23,6 +23,7 @@ export KBUILD_BUILD_USER=root
 export KBUILD_BUILD_HOST=dg02-pool06-kvm32
 export KBUILD_BUILD_VERSION=1
 export LLVM_IAS=1
+export TARGET_PRODUCT=k6877v1_64_k419
 
 # make .config
 make O=out \
