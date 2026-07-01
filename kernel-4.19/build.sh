@@ -3,14 +3,14 @@ set -e
 
 # some paths
 KERNELDIR=$(pwd)
-CLANG_DIR=$HOME/toolchains/clang-r383902
+CLANG_DIR=$HOME/toolchains/clang-r416183b
 DEFCONFIG=k6877v1_64_k419_defconfig
 IM=Image.gz
 
 # clang install
 if [ ! -d "$CLANG_DIR" ]; then
     echo "Clang not found! Downloading..."
-    git clone --depth=1 https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6443078 $CLANG_DIR
+    git clone --depth=1 https://github.com/slakkystar/clang-r416183b.git $CLANG_DIR
     cd $KERNELDIR
 fi
 
